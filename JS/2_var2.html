@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+</head>
+<body>
+
+<script type="text/javascript">
+    /*var x = new Z();
+     var y = new Z();
+
+     alert(x == y);
+
+     function Z() {
+     if (Z._singletonInstance) {
+     return Z._singletonInstance;
+     }
+     Z._singletonInstance = this;
+     }*/
+
+
+    /*var array = [21, 32, 452, 792];
+     var str = array.join("");
+     var m = str.match(/2/g);
+     var len = m ? m.length : 0;
+     alert(len);*/
+
+    //var number = 46526832572;
+    /*var number = 10;
+     var count = 0;
+     while (number > 0) {
+     if (number % 10 == 1) {
+     ++count;
+     }
+     number = Math.floor(number / 10);
+     }
+     alert(count);*/
+
+    var array = [21, 22, 452, 792];
+    var count = 0;
+    array.map(function (number) {
+        while (number > 0) {
+            if (number % 10 == 2) {
+                ++count;
+            }
+            number = Math.floor(number / 10);
+        }
+    });
+    alert(count);
+
+    /*function getCountsOfDigits(number) {
+     return Math.ceil(Math.log2(number));
+     }
+
+     var number = 46526832572;
+     //var r = getCountsOfDigits(number);
+     //alert(r);
+
+     var count = 0;
+     while (number > 0) {
+     var shortenNumberFloat = (number / 10);
+     alert(shortenNumberFloat);
+     if ((shortenNumberFloat % 1) == .2) {
+     ++count;
+     }
+     number = Math.floor(shortenNumberFloat);
+     }
+
+     alert(count);*/
+
+    /*var array = [21, 32, 452, 792];
+     number = '46568357';
+     //String.valueOf(Math.abs(number)).length();
+     var r = number.valueOf(5).length();
+     alert(r);*/
+
+</script>
+
+</body>
+</html>
